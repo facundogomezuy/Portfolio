@@ -1,0 +1,78 @@
+
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_title{
+    font-family: 'Poppins';
+    font-weight: 900;
+    color:  hsl(0, 0%, 20%);
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+.text_container{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+input{
+    margin:0px 50px;
+    width: 400px;
+    height: 45px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 10px;
+}
+textarea{
+    margin:0px 50px;
+    width: 600px;
+    height: 150px;
+    border: 2px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.send_button{
+    border: none;
+    border-radius: 9px;
+    background-color: #2196F3;
+    padding: 5px 10px;
+    width: 110px;
+    height: 45px;
+    font-size: 25px;
+    color:  hsl(0, 0%, 20%);
+    font-family: 'Poppins';
+    cursor: pointer;
+    margin-bottom: 100px;
+    box-shadow: 10px 10px 9px 0px rgba(0,0,0,0.1);
+
+}
+.send_button:hover{
+    box-shadow: inset 31px 29px 29px 0px rgba(0,0,0,0.1);
+}
+.inputs_container{
+
+    text-align: center;
+}
+
+
+@media (max-width:1100px) {
+    
+}
+
+@media (max-width:480px) {
+    input{
+        width: 350px;
+        margin:0px;
+        margin-top: 10px;
+    }
+    textarea{
+        width: 350px;
+        margin:0px;
+        
+    }
+}

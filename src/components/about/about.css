@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-box{
+    text-align: center;
+    margin-top: 250px;
+    height: 750px;
+    scroll-margin-top: 450px;
+}
+.about_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 100px;
+    font-family: 'Poppins';
+    align-items: center;
+}
+.about_text p{
+    font-weight: 100;
+    color:  hsl(0, 0%, 46%);
+    width: 60%;
+    margin-top: 20px;
+}
+.about_text h1{
+    font-weight: 900;
+    color:  hsl(0, 0%, 20%);
+    font-size: 60px;
+}
+.about_img{
+    background: url(./Yo.jpeg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    animation: img_animate 8s ease-in-out infinite 1s;
+    border: 8px solid hsl(0, 0%, 80%);
+    margin-right: 40px;
+}
+
+#download_CV{
+    margin-top: 100px;
+    border: none;
+    border-radius: 9px;
+    background-color: #2196F3;
+    padding: 5px 10px;
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+    color:  hsl(0, 0%, 20%);
+    font-family: 'Poppins';
+    cursor: pointer;
+    box-shadow: 19px 20px 9px 0px rgba(0,0,0,0.1);
+}
+#download_CV:hover{
+    box-shadow: inset 31px 29px 29px 0px rgba(0,0,0,0.1);
+}
+
+
+@keyframes img_animate {
+    0%{
+        border-radius: 60% 50% 40% 70%/70% 40% 60% 50%;
+    }
+    50%{
+        border-radius: 50% 60% 80% 60%/60% 80% 70% 50%;
+    }
+    100%{
+        border-radius: 60% 50% 40% 70%/70% 40% 60% 50%;
+    }
+}
+
+
+@media (max-width:1100px) {
+    .about_info{
+        flex-direction: column;
+    }
+    .about_text p{
+        width: 100%;
+    }
+    .about_text{
+        width: 80%;
+        margin-right: 0;
+    }
+    .about-box{
+        margin-top: 150px;
+        height: 600px;
+    }
+    .about_img{
+        margin-right: 0px;
+    }
+    
+}
+
+@media (max-width:480px) {
+    .about-box{
+        margin-top: 50px;
+    }
+    .about_img{
+        margin-right: 0px;
+    }
+    
+}
